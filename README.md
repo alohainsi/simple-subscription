@@ -1,5 +1,5 @@
 ## SUMMARY
-It's a decorator which do create a new "Subscription" instance and will unsubscribe from all existing subscriptions in a component by itself.
+This is a decorator which creates a new “subscription” instance. Its functionality will subscribe/unsubscribe from all existing subscriptions in a component by itself when OnDestroy is
 
 ## Usage
 
@@ -34,7 +34,7 @@ export class ComponentClassName implements OnInit, I_SUBSCRIPTION {
     }
     ngOnDestroy(): void {
         // you don't have to control subscriptions anymore,
-        // the decorator gonna unsubscribe from all of existing subscriptions by itself
+        // the decorator will unsubscribe from all of existing subscriptions by itself
     }
 }
 ```
